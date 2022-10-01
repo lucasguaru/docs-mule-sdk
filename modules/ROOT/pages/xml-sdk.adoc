@@ -512,7 +512,19 @@ To create an XML SDK module:
                  <url>http://repository.mulesoft.org/releases/</url>
                  <layout>default</layout>
              </repository>
-         </repositories>
+         </repositories>			 
+
+        <pluginRepositories>
+            <pluginRepository>
+                <id>mulesoft-releases</id>
+                <name>mulesoft release repository</name>
+                <layout>default</layout>
+                <url>https://repository.mulesoft.org/releases/</url>
+                <snapshots>
+                  <enabled>false</enabled>
+                </snapshots>
+            </pluginRepository>
+        </pluginRepositories>
      </profile>
  </profiles>
 ----
